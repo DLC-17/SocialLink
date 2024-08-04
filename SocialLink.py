@@ -2,7 +2,7 @@ from pymongo import MongoClient
 from datetime import datetime
 from termcolor import colored
 
-cluster = MongoClient("mongodb+srv://DC:coding@sociallink.trzdk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+cluster = MongoClient("ClientUrl")
 db = cluster["SocialLink"]["test run"]
 all = db.find({})
 date = datetime.now().strftime("%x")
